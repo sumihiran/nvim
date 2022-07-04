@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"
   use "ray-x/lsp_signature.nvim"
+  use "jose-elias-alvarez/null-ls.nvim" 
 
   -- Telescope
   use {

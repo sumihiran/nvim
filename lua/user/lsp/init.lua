@@ -1,6 +1,7 @@
 local nvim_lsp = require('lspconfig')
 
 require "user.lsp.lsp-signature"
+require "user.lsp.null-ls"
 
 local handlers = require("user.lsp.handlers")
 local servers = {
