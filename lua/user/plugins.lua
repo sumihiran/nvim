@@ -62,6 +62,13 @@ return require('packer').startup(function(use)
   -- Colorschemes
   use { "ellisonleao/gruvbox.nvim" }
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+  use "f-person/git-blame.nvim"
+  use "ruifm/gitlinker.nvim"
+  use "mattn/vim-gist"
+  use "mattn/webapi-vim"
+
   if packer_bootstrap then
     require('packer').sync()
   end
