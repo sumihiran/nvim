@@ -21,6 +21,9 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', 
     }
   }
+    
+  -- Editor
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- Autocompletion
   use "hrsh7th/nvim-cmp"
