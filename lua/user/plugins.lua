@@ -44,6 +44,11 @@ return require('packer').startup(function(use)
   use "neovim/nvim-lspconfig"
   use "ray-x/lsp_signature.nvim"
 
+  -- Treesitter
+  use "nvim-treesitter/nvim-treesitter"
+  use "nvim-treesitter/playground"
+  use "drybalka/tree-climber.nvim"
+
   if packer_bootstrap then
     require('packer').sync()
   end

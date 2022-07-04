@@ -8,7 +8,8 @@ local servers = {
     'intelephense', 
     'csharp_ls' , 
     'dockerls', 
-    'psalm'
+    'psalm',
+    'sumneko_lua'
 }
 
 local opts = { noremap=true, silent=true }

@@ -1,5 +1,5 @@
 local options = {
-    syntax = "on",
+    -- syntax = "on", -- switched to treesitter
     showmode = false,
     mouse = "a",
 
