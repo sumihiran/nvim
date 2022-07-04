@@ -44,10 +44,23 @@ return require('packer').startup(function(use)
   use "neovim/nvim-lspconfig"
   use "ray-x/lsp_signature.nvim"
 
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use "tom-anders/telescope-vim-bookmarks.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+  use "lalitmee/browse.nvim"
+
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"
   use "nvim-treesitter/playground"
   use "drybalka/tree-climber.nvim"
+
+  -- Colorschemes
+  use { "ellisonleao/gruvbox.nvim" }
 
   if packer_bootstrap then
     require('packer').sync()

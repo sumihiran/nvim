@@ -55,6 +55,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Custom
 keymap("n", "<esc><esc>", "<cmd>nohlsearch<cr>", opts)
+keymap("n", "<C-s>", "<cmd>vsplit<cr>", opts)
+
+-- Telescope
+-- keymap("n", "<Leader>f", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 
 -- Disable arrow keys
 keymap("n", "<up>", "<nop>", opts)

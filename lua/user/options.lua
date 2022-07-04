@@ -1,4 +1,5 @@
 local options = {
+    background = "dark",
     -- syntax = "on", -- switched to treesitter
     showmode = false,
     mouse = "a",
@@ -17,7 +18,7 @@ local options = {
 
     incsearch = true,
     hlsearch = false,
-
+    termguicolors = true,
     number = true,                           -- set numbered lines
     relativenumber = true,
     shiftwidth = 4,
