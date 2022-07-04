@@ -11,6 +11,14 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c"
+
 -- Normal Mode --
 keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 
@@ -25,9 +33,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
+-- Press jj fast to enter
 keymap("i", "jj", "<ESC>", opts)
 
 -- Visual --
@@ -49,3 +55,16 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Custom
 keymap("n", "<esc><esc>", "<cmd>nohlsearch<cr>", opts)
+
+-- Disable arrow keys
+keymap("n", "<up>", "<nop>", opts)
+keymap("n", "<down>", "<nop>", opts)
+keymap("i", "<up>", "<nop>", opts)
+keymap("i", "<down>", "<nop>", opts)
+keymap("i", "<left>", "<nop>", opts)
+keymap("i", "<right>", "<nop>", opts)
+
+-- Left and right can switch buffers
+keymap("n", "<left>", ":bp<CR>", opts)
+keymap("n", "<right>", ":bn<CR>", opts)
+
