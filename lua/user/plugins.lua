@@ -15,6 +15,13 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', 
     }
   }
+  -- Autocompletion
+  use "hrsh7th/nvim-cmp"
+
+  -- LSP
+  use "neovim/nvim-lspconfig"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "ray-x/lsp_signature.nvim"
 
   if packer_bootstrap then
     require('packer').sync()
