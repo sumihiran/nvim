@@ -8,6 +8,12 @@ return require('packer').startup(function(use)
    -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- Terminal
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
   -- UI
   use {
     'kyazdani42/nvim-tree.lua',
