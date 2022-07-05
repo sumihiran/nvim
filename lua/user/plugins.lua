@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
       'kyazdani42/nvim-web-devicons', 
     }
   }
+  use "folke/which-key.nvim"
     
   -- Editor
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
