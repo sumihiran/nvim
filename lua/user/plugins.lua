@@ -65,6 +65,7 @@ return require('packer').startup(function(use)
   use "nvim-treesitter/nvim-treesitter"
   use "nvim-treesitter/playground"
   use "drybalka/tree-climber.nvim"
+  use "p00f/nvim-ts-rainbow"
 
   -- Colorschemes
   use { "ellisonleao/gruvbox.nvim" }
