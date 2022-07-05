@@ -8,7 +8,7 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup {
     debug = false,
     sources = {
-        diagnostics.psalm,
+        -- diagnostics.psalm,
         formatting.phpcsfixer,
         formatting.rustfmt,
         formatting.uncrustify,

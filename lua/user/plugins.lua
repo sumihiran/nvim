@@ -44,8 +44,12 @@ return require('packer').startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig"
+  use "williamboman/nvim-lsp-installer"
   use "ray-x/lsp_signature.nvim"
   use "jose-elias-alvarez/null-ls.nvim" 
+  
+  use "b0o/schemastore.nvim" -- json schema support
+  use 'simrat39/rust-tools.nvim' -- extra rust tooling
 
   -- Telescope
   use {
