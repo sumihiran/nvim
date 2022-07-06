@@ -51,6 +51,7 @@ return require('packer').startup(function(use)
   
   use "b0o/schemastore.nvim" -- json schema support
   use 'simrat39/rust-tools.nvim' -- extra rust tooling
+  use "folke/trouble.nvim"
 
   -- Telescope
   use {
