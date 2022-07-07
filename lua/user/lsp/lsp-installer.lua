@@ -13,10 +13,11 @@ local servers = {
     "yamlls",
     "bashls",
     "rust_analyzer",
-    'intelephense', 
-    'dockerls', 
+    'intelephense',
+    'dockerls',
     'psalm',
-    'omnisharp'
+    'omnisharp',
+    'taplo'
 }
 
 local settings = {
